@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <android.gesture.GestureOverlayView
+                android:id="@+id/gestureOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gestureColor="#00ff66"
+                android:alwaysDrawnWithCache="true"
+                android:gestureStrokeType="multiple"
+                android:fadeOffset="20000"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+            <Button
+                    android:id="@+id/myButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="TWEET!"/>
+
+            <Button
+                    android:id="@+id/resetImage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="clear"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
+
